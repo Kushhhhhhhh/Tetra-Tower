@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #571B97;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em; /* Adjust font size for mobile */
+    color: white;
+    text-shadow: 0 0 10px #0000008c;
+}
+
+h2 {
+    text-align: center;
+    color: #FDFDFD;
+    display: none;
+}
+
+canvas {
+    background: url('./assets/main.png');
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #00000086;
+    border-radius: 8px;
+    width: 80%; /* Adjust width for mobile */
+    max-width: 500px; /* Set a maximum width to prevent stretching on larger screens */
+}
+
+.scoreout {
+    color: #FDFDFD;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:  0 0 10px #00000086;
+    margin: 10px;
+    min-width: 100px;
+    text-align: center;
+    font-size: 1.5em; /* Adjust font size for mobile */
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    canvas {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .scoreout {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+}
